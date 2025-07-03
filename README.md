@@ -138,10 +138,9 @@ Bu proje, modern web teknolojileri kullanılarak geliştirilmiş tam özellikli 
 
 ## Ekran Görüntüleri
 
-  ![anasayfa](screenshots/anasayfa.jpg)
-  ![portföy](screenshots/portfoy.jpg)
-  ![about](screenshots/about.jpg)
-  ![blog](screenshots/blog.jpg)
-  ![blog2](screenshots/blog2.jpg)
-  ![admin](screenshots/admin.jpg)
-
+![anasayfa](Screenshots/anasayfa.jpg)
+![portföy](Screenshots/portfoy.jpg)
+![about](Screenshots/about.jpg)
+![blog](Screenshots/blog.jpg)
+![blog2](Screenshots/blog2.jpg)
+![admin](Screenshots/admin.jpg)
