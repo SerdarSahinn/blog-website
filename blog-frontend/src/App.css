@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --color-bg-light: #fff;
+  --color-bg-dark: #181824;
+  --color-text-light: #111;
+  --color-text-dark: #f2f2f2;
+  --color-accent: #FFD600;
+  --color-accent-dark: #7F7FD5;
+}
+
+body.light {
+  background: linear-gradient(120deg, var(--color-accent), var(--color-accent-dark), var(--color-accent), var(--color-accent-dark));
+  background-size: 400% 400%;
+  animation: gradientBG 16s ease infinite;
+  color: var(--color-text-light);
+}
+
+body.dark {
+  background: #181824;
+  color: var(--color-text-dark);
+}
+
+.navbar {
+  background: var(--color-bg-light);
+}
+body.dark .navbar {
+  background: var(--color-bg-dark);
+}
+
+.navbar li, .navbar a {
+  color: var(--color-text-light);
+}
+body.dark .navbar li, body.dark .navbar a {
+  color: var(--color-text-dark);
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  body, .App {
+    overflow-x: hidden;
+  }
+  .App-header {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+  .navbar li, .navbar a {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
